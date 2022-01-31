@@ -42,12 +42,13 @@ const Rentals = ({ properties }) => {
                   </div>
                   <footer className="flex justify-between items-center mt-4">
                     <Link href="/">
-                      <a className="py-3 px-6 bg-indigo-900 text-white">
-                        Request Viewing
+                      <a className="py-3 px-4 text-sm 2xl:text-base bg-indigo-900 text-white">
+                        Book Viewing
                       </a>
                     </Link>
                     <div className="inline-block">
-                      <span className="text-2xl font-bold inline-block mr-0.5">
+                      <span className="text-xl font-bold inline-block mr-0.5">
+                        {console.log(cs)}
                         {cs + property.price}
                       </span>
                       <span className="text-sm">/{freq}</span>
