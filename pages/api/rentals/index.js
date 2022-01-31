@@ -19,6 +19,8 @@ const RENTALS_QUERY = `query Properties {
       id
       width
       url
+      blurUpThumb
+      blurhash
     }
     price
     paymentFrequency

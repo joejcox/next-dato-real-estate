@@ -41,6 +41,8 @@ export default function Home({ properties }) {
                         alt={property.mainImage.alt}
                         layout="fill"
                         objectFit="cover"
+                        placeholder="blur"
+                        blurDataURL={property.mainImage.blurUpThumb}
                       />
                     </figure>
                     <div className="py-6 px-8 bg-white">
