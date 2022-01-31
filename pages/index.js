@@ -80,7 +80,7 @@ export default function Home({ properties }) {
 }
 
 export async function getServerSideProps() {
-  const response = await axios.post("/api/rentals")
+  const response = await axios.post(`${process.env.BASE_URL}/api/rentals`)
   const { allPropertyRentals } = response.data
   return {
     props: {
