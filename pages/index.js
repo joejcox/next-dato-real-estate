@@ -6,14 +6,14 @@ export default function Home({ properties }) {
   return (
     <div>
       <Head>
-        <title>Estate Agents</title>
+        <title>uMove | Houses To Rent UK</title>
         <meta name="description" content="Estate Agents Example" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <section className="py-6" role="banner">
         <div className="container">
-          <h1 className="text-6xl">Estate Agents</h1>
+          <h1 className="text-6xl">uMove</h1>
         </div>
       </section>
 
