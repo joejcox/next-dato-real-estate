@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Rentals from "../components/Rentals"
+import Rentals from "../components/rentals"
 import axios from "axios"
 
 export default function Home({ properties }) {
