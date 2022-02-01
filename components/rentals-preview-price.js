@@ -12,7 +12,6 @@ const RentalsPreviewPrice = ({ currency, frequency, price }) => {
       </Link>
       <div className="inline-block">
         <span className="text-xl font-bold inline-block mr-0.5">
-          {console.log(cs)}
           {cs + price}
         </span>
         <span className="text-sm">/{freq}</span>
