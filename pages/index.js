@@ -1,26 +1,30 @@
 import Head from "next/head"
 import Rentals from "../components/rentals"
+// import RentalsFeatured from "../components/rentals-featured"
 import axios from "axios"
+import Banner from "../components/home/banner"
+import SearchBox from "../components/search-box"
 
 export default function Home({ properties }) {
   return (
-    <div>
+    <>
       <Head>
-        <title>uMove | Houses To Rent UK</title>
-        <meta name="description" content="Estate Agents Example" />
+        <title>Redac Strattons | London Estate Agents</title>
+        <meta
+          name="description"
+          content="Redac Strattons Estate Agents in London"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Banner />
 
-      <section className="py-6" role="banner">
-        <div className="container">
-          <h1 className="text-6xl">uMove</h1>
-        </div>
-      </section>
+      <SearchBox />
 
       <main role="main">
+        {/* <RentalsFeatured property={properties[0]} /> */}
         <Rentals properties={properties} />
       </main>
-    </div>
+    </>
   )
 }
 

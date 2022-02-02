@@ -5,6 +5,7 @@ module.exports = {
       "images.unsplash.com",
       "tailwindui.com",
       "www.datocms-assets.com",
+      "www.redacstrattons.com",
     ],
   },
 }

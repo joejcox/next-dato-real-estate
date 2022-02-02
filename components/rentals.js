@@ -1,20 +1,14 @@
-import RentalsFeatured from "./rentals-featured"
 import RentalsPreview from "./rentals-preview"
 
 const Rentals = ({ properties }) => {
-  const featuredProperty = properties[0]
-  const remainingProperties = properties.slice(1)
   return (
-    <>
-      <RentalsFeatured property={featuredProperty} />
-      <section className="section bg-white">
-        <div className="container-flex">
-          {remainingProperties.map((property) => (
-            <RentalsPreview property={property} key={property.id} />
-          ))}
-        </div>
-      </section>
-    </>
+    <section className="section bg-gradient-to-b from-grey-900 to-dark">
+      <div className="container-flex">
+        {properties.map((property) => (
+          <RentalsPreview property={property} key={property.id} />
+        ))}
+      </div>
+    </section>
   )
 }
 

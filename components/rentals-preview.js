@@ -5,9 +5,9 @@ import RentalsPreviewPrice from "./rentals-preview-price"
 
 const RentalsPreview = ({ property }) => {
   return (
-    <article className="w-full lg:w-1/2 xl:w-1/3 -px-2" key={property.id}>
+    <article className="w-full lg:w-1/2 xl:w-1/3" key={property.id}>
       <div className="p-2">
-        <div className="shadow rounded-tr-bl">
+        <div className="shadow">
           <RentalsPreviewImage image={property.mainImage} />
           <footer className="py-6 px-8 bg-white">
             <RentalsPreviewDetails
